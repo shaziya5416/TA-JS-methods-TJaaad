@@ -3,14 +3,23 @@
 /*
   Create a function named addTwo which accepts a number, adds 2 to the number and return the new value.
 */
-
+function addTwo(number){
+return number+2;
+}
 /*
   Create a function named addThree which accepts a number, adds 3 to the number and return the new value.
 */
+function addThree(number){
+return number+3;
+}
 
 /*
   Create a function named addFive which accepts a number, adds 5 to the number and return the new value.
 */
+function addFive(number)
+{
+return number+5;
+}
 
 /*
   Create a function named addTwoToArray which accepts:
@@ -18,13 +27,28 @@
     - Returns a new array where 2 is added to each element
     - While doing so use the funciton addTwo
 */
-
+function addTwoArray(arr){
+let result=[];
+for (let two of arr){
+final=addTwo(two)
+result.push(final);
+}
+return result;
+}
 /*
   Create a function named addThreeToArray which accepts:
     - an array of numbers
     - aeturns a new array where 2 is added to each element
     - while doing so use the funciton addThree
 */
+function addThreeArray(arr){
+let result=[];
+for (let two of arr){
+final=addThree(two)-1;
+result.push(final);
+}
+return result;
+}
 
 /*
   Create a function named addFiveToArray which accepts:
@@ -32,6 +56,14 @@
     - aeturns a new array where 2 is added to each element
     - while doing so use the funciton addThree
 */
+function addFiveArray(arr){
+let result=[];
+for (let two of arr){
+final=addThree(two)+2;
+result.push(final);
+}
+return result;
+}
 
 /*
 In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeating the code, let's fix this.
@@ -48,7 +80,14 @@ In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeatin
     console.log(changeArray([1, 2, 3, 4, 5, 6], addThree)); // [4, 5, 6, 7, 8, 9]
     console.log(changeArray([1, 2, 3, 4, 5, 6], addFive)); // [6, 7, 8, 9, 10, 11]
 */
-
+function changeArray(arr,cb){
+let result=[];
+for (let two of arr){
+final=cb(two);
+result.push(final);
+}
+return result;
+}
 /*
   Create a function called sendMessage that accepts two arguments:
     - a string (message) and a function (callback).
@@ -59,20 +98,38 @@ In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeatin
     console.log(sendMessage("Hello Alert!", alert));
     console.log(sendMessage("Hello Prompt!", prompt));
 */
+function doAs(fn){
+return fn;
+}
+function sendMessage(message,doAs){
+return doAs(`${message}`);
+}
+
 
 /*
 
  Create a function named `first` that accepts an argument a function (callback) and return the same function defination.
 
+function defination(a,b){
+return a+b;
+}
+function first(cb){
+return cb;
+}
 */
-
 /*
  Create a function named `second`
   - Inside second create another function named `third` which accepts a number, adds 1 to it and returns it
   - Return the function defination (third) from the second function
   - Also write the required code to call the function
 */
-
+function second(){
+function third(num){
+return num+1;
+}
+return third;
+}
+console.log(second(third(3)));
 /*
  Write a function named `callMe` which 
   - accept a function (callback function) as argument.
