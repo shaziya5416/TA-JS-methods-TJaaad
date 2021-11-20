@@ -103,31 +103,28 @@ halfNumbers.push(final);
 )
 
 // Create a new variable named oddNumbers that store all the odd numbers in numbersThree array
-/*
-var oddNumbers=[];
-final=new3.map(function(element){
-if (element%2!=0){
-return element;
-}
-//oddNumbers.push(final);
-)// NOT WORKING...
-*/
+
+let oddNUmbers=new3.filter((element)=>element%2!==0
+);
+console.log(oddNUmbers);
 
 
 
 // Create a new variable named evenNumbers that store all the even numbers in numbersThree array
-//
+let eveNUmbers=new3.filter((element)=>element%2===0
+);
+console.log(eveNUmbers);
+
+
 // Find the index of 10 in numbersThree array
-/*let index1=new3.findIndex(function(element){
-}
-)
+let index1=new3.findIndex((element)=>element===10
+);
 console.log(index1);
-*/
 // Reverse the values of numbersThree array
 numbersThree.reverse();
 // Reverse the values of numbersTwo array
 numbersTwo.reverse();
 // Join all fruits with '-', convert to uppercase and log it
-fruits.join(`-`);
+let one1=(fruits.join(`-`).toUpperCase());
 // Join all fruits with '&', convert to lowercase and log it
-fruits.join(`&`);
+(fruits.join(`&`).toLowerCase);
