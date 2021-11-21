@@ -61,7 +61,9 @@ let final=(quote.split(" "));
 /*
 11. Change the word "today" in quoteSplitted to "tomorrow" and join all the words to form a sentance.
 */
-final.replace("today","tomorrow");
+let index=final.indexOf("today");
+final[index]="tomorrow";
+console.log(final);
 //quoteSplit.replace("today","tomorrow");
 /*
 12. Find the index of second "o" in quote. Use indexOf
