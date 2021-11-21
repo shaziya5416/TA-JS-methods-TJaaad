@@ -1,0 +1,172 @@
+Watch this video to understand what to do in this exercise block [link](https://www.youtube.com/watch?v=zGpplZj4zY0&feature=youtu.be)
+
+## Getting To Know Array Methods
+
+Go to this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and look for the name of method to learn about it.
+
+**Write in your own way of understanding (don't copy paste)**
+
+Only if you are done with step 1 you should go ahead.
+
+1. Practice it by yourself in console (2-3 times to understand)
+2. Data types of parameters
+3. Return value type
+4. Write three examples
+5. In your words what this method does.
+6. Does it mutate the original value or not (check https://doesitmutate.xyz)
+
+Example:
+
+1. `concat`
+
+   - Parameter: n (any) number of values (number, string, boolean, array, null, undefined, object and function etc)
+   - Return: a single Array consisting of by all the values passed as parameters in the same order.
+   - Example:
+     ```js
+     let numbers = [1, 2, 3];
+     numbers.concat(4); //[1,2,3,4]
+     let sentanceArray = 'A quick brown fox jumped over a lazy'.split(' ');
+     sentanceArray.concat('dog').join(' '); //"A quick brown fox jumped over a lazy dog"
+     let colors = ['red', 'green', 'blue'];
+     colors.concat('black', 'red', 21, true); // ['red','green','blue','black', 'red', 21, true]
+     ```
+   - `concat` accepts n number of values and returns one array with all the values in same order. It does not change the original array.
+   - No it does not mutate the original array
+
+2. `join`
+-What it does?:It joins the given array with the seperator.
+-Parameter:takes an array and returns an array.If array length is 0,empty string is returned.
+.join(separator) which is optional
+-Return:array
+-Example:
+let arr=[1,2,3,4,"nano","ok"]
+//undefined
+arr.join()
+//'1,2,3,4,nano,ok'
+arr.join(``)
+//'1234nanook'
+arr.join(0)
+//'10203040nano0ok'
+arr.join("too")
+//'1too2too3too4toonanotoook'
+
+3. `flat`
+-What it does?:Makes the nested function in a flat structure.May work upto a sprcific depth
+-Parameter:
+-Return:
+-Example:
+
+4. `push`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+5. `indexOf`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+6. `lastIndexOf`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+7. `includes`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+8. `reverse`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+9. `every`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+10. `shift`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+11. `splice`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+12. `find`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+13. `unshift`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+14. `findIndex`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+15. `filter`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+16. `flat`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+17. `forEach`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+18. `map`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+19. `pop`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+20. `reduce`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+21. `slice`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
+22. `some`
+-What it does?:
+-Parameter:
+-Return:
+-Example:
+
