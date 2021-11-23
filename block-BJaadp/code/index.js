@@ -16,12 +16,20 @@ let persons = [
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
+let gradeArray=persons.map((element)=>element.grade);
+let avg=gradeArray.reduce(((acc,cv)=>acc=acc+cv),0)/gradeArray.length;
 
 // Find the average grade of male
+let gradeMale=persons.filter((element)=>element.sex==="M").map((element)=>element.grade);
+let avgM=gradeMale.reduce(((acc,cv)=>acc=acc+cv),0)/gradeMale.length;
 
 // Find the average grade of female
+let gradefemale=persons.filter((element)=>element.sex==="F").map((element)=>element.grade);
+let avgF=gradefemale.reduce(((acc,cv)=>acc=acc+cv),0)/gradefemale.length;
 
 // Find the highest grade
+let highest=gradeArray.reduce(((acc,cv)=>{if (cv>acc){acc=cv}}
+),cv);
 
 // Find the highest grade in male
 
@@ -90,7 +98,7 @@ Create these functions which accepts a number value and returns a number value:
   - `half` converts the value to half and return the integer value not decimal (use Math.round(21.5) => 21)
 */
 
-let pipeline = [
+/*let pipeline = [
   increment,
   double,
   decrement,
@@ -100,6 +108,7 @@ let pipeline = [
   half,
   increment,
 ];
+/*
 
 /*
 Using the pipeline variable that contains the collection of functions, taking the initial value 3 find the output.
@@ -115,7 +124,7 @@ EXAMPLE:
   ...
 */
 
-let pipeline2 = [
+/*let pipeline2 = [
   increment,
   half,
   double,
@@ -128,5 +137,5 @@ let pipeline2 = [
   increment,
   triple,
 ];
-
+*/
 // Find the output using pipeline2 the initial value if 8
