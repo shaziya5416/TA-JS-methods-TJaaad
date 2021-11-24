@@ -1,36 +1,57 @@
 // NOTE: You can not use reduce methods to solve this exercise
 
-function countAllPeople() {
-  let arr=got.houses[((element)=>element.name);
-return arr.length;
+function countAllPeople(){
+let totalpeople=0;
+ let arr=got.houses.forEach((element)=>
+totalpeople=totalpeople+element.people.length
+)
+return totalpeople;
 }
 
 function peopleByHouses() {
-  // your code goes here
+ let final={};
+let arr=got.houses.forEach((element)=>{
+final[element.name]=element.people.length
+}
+)
+return final;
 }
 
 function everyone() {
-  // your code goes here
+  let final=[];
+got.houses.forEach((element)=>final.push(element.people.map((elm)=>elm.name)))
+return final.flat(Infinity);
+}
+function nameWithS() {
+  let final1=everyone();
+return final1.filter((element)=>element.toLowerCase().includes("s"));
 }
 
-function nameWithS() {
-  // your code goes here
-}
 
 function nameWithA() {
-  // your code goes here
+ let final1=everyone();
+return final1.filter((element)=>element.toLowerCase().includes("a"));
+
 }
 
+
 function surnameWithS() {
-  // your code goes here
+  let final1=everyone();
+return final1.filter((element)=>element.split(" ")[1].toLowerCase().includes("s"));
 }
 
 function surnameWithA() {
-  // your code goes here
+   let final1=everyone();
+return final1.filter((element)=>element.split(" ")[1].toLowerCase().includes("s"));
+
 }
 
 function peopleNameOfAllHouses() {
-  // your code goes here
+let final={};
+got.houses.forEach((element)=>{
+final[element.name]=element.people.map((elm)=>elm.name)
+})
+return final;
 }
 
 // Testing your result after writing your function
