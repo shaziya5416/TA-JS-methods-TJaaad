@@ -1,7 +1,8 @@
 // NOTE: You can not use reduce methods to solve this exercise
 
 function countAllPeople() {
-  // your code goes here
+  let arr=got.houses[((element)=>element.name);
+return arr.length;
 }
 
 function peopleByHouses() {
